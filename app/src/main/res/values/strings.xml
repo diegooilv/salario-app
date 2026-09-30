@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SalarioPlus</string>
+    <string name="titulo">Salário +</string>
+    <string name="folha_de_pagamento">Folha de Pagamento</string>
+    <string name="imposto_de_renda">Imposto de Renda</string>
+    <string name="rescis_o">Rescisão</string>
+    <string name="fgts">FGTS</string>
+    <string name="desenvolvido_por_diego_e_henrique">Desenvolvido por: Diego e Henrique</string>
+</resources>
