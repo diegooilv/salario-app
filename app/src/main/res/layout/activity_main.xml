@@ -95,10 +95,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:height="65dp"
-                android:textSize="20sp"
                 android:backgroundTint="#813030"
                 android:fontFamily="@font/amethysta"
-                android:text="@string/fgts" />
+                android:onClick="fgts"
+                android:text="@string/fgts"
+                android:textSize="20sp" />
 
             <View
                 android:id="@+id/view2"
