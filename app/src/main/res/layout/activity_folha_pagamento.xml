@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FolhaPagamento">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- CABEÇALHO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra_sc"
+                android:text="FOLHA"
+                android:textAlignment="center"
+                android:textColor="#813030"
+                android:textSize="55sp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="64dp"
+                android:onClick="menu"
+                app:srcCompat="@drawable/logo" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+        <!-- FUNCIONÁRIO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="Funcionário:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/funcionario"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- FREQUÊNCIA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="Frequência:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/frequencia"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Trabalhados / faltas / atestados"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <!-- HORAS EXTRAS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="Horas extras:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/horasExtras"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Quantidade de horas"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <!-- AUXÍLIOS E ADICIONAIS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="Adicionais:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/adicionais"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Auxílios e outros (R$)"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <!-- CALCULAR -->
+
+        <Button
+            android:id="@+id/botaoCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#813030"
+            android:fontFamily="@font/amethysta"
+            android:onClick="calcularFolha"
+            android:text="Calcular folha"
+            android:textSize="20sp" />
+
+        <!-- RESULTADO -->
+
+        <TextView
+            android:id="@+id/resposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amethysta"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/botaoAvancar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#813030"
+            android:fontFamily="@font/amethysta"
+            android:onClick="avancar"
+            android:text="Avançar"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/botaoPDF"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#813030"
+            android:fontFamily="@font/amethysta"
+            android:onClick="gerarPDF"
+            android:text="Gerar PDF"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sobre">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- CABEÇALHO -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/almendra_sc"
+                    android:text="SOBRE"
+                    android:textAlignment="center"
+                    android:textColor="#813030"
+                    android:textSize="52sp" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="5dp"
+                    android:onClick="menu"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+
+            <!-- IDENTIFICAÇÃO IFRS -->
+
+            <ImageView
+                android:id="@+id/logoIFRS"
+                android:layout_width="wrap_content"
+                android:layout_height="119dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logoifrs" />
+            <View
+                android:layout_width="75dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#813030" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/almendra_sc"
+                android:text="SalaryPlus"
+                android:textAlignment="center"
+                android:textColor="#813030"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/amethysta"
+                android:text="Cálculo e gerenciamento de folha de pagamento"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <!-- SOBRE O PROJETO -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/almendra_sc"
+                android:text="Sobre o projeto"
+                android:textColor="#813030"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/amethysta"
+                android:lineSpacingExtra="5dp"
+                android:text="O SalaryPlus foi desenvolvido para facilitar o cálculo e a organização de folhas de pagamento, especialmente no regime de diarista.&#10;&#10;O aplicativo permite registrar valores de remuneração, dias trabalhados e faltas, auxiliando no cálculo do salário, descanso semanal remunerado (DSR), adicionais e descontos.&#10;&#10;Também oferece a emissão de demonstrativos de pagamento em PDF, proporcionando mais praticidade e organização."
+                android:textSize="14sp" />
+
+            <!-- FUNCIONALIDADES -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/almendra_sc"
+                android:text="Funcionalidades"
+                android:textColor="#813030"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/amethysta"
+                android:lineSpacingExtra="7dp"
+                android:text="• Cadastro de empresas e funcionários&#10;• Cálculo de remuneração por diária&#10;• Controle de dias trabalhados e faltas&#10;• Cálculo de DSR e adicionais&#10;• Organização de descontos&#10;• Geração de holerites em PDF"
+                android:textSize="14sp" />
+
+            <!-- DESENVOLVEDORES -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/almendra_sc"
+                android:text="Desenvolvedores"
+                android:textAlignment="center"
+                android:textColor="#813030"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amethysta"
+                android:text="Henrique"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/amethysta"
+                android:text="Diego"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <!-- RODAPÉ -->
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="25dp"
+                android:background="#813030" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/amethysta"
+                android:text="IFRS • 2026"
+                android:textAlignment="center"
+                android:textColor="#813030"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

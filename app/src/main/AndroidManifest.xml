@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SalarioPlus">
         <activity
+            android:name=".FolhaPagamento"
+            android:exported="false" />
+        <activity
+            android:name=".Sobre"
+            android:exported="false" />
+        <activity
+            android:name=".Configs"
+            android:exported="false" />
+        <activity
             android:name=".FGTS"
             android:exported="false" />
         <activity

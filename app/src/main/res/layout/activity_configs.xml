@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra_sc"
+                android:text="EMPRESA"
+                android:textAlignment="center"
+                android:textColor="#813030"
+                android:textSize="42sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/amethysta"
+            android:text="Dados da empresa"
+            android:textColor="#813030"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/razaoSocial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Razão social"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/nomeFantasia"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nome fantasia"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="CNPJ"
+            android:inputType="number"
+            android:maxLength="14" />
+        <EditText
+            android:id="@+id/endereco"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Endereço completo"
+            android:inputType="textCapSentences" />
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Telefone"
+            android:inputType="phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/amethysta"
+            android:text="Configurações de pagamento"
+            android:textColor="#813030"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/diariaPadrao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Valor padrão da diária (R$)"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amethysta"
+            android:text="Critério de perda de DSR"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/regraDsr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/percentualHoraExtra"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Percentual de hora extra (%)"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/percentualNoturno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Percentual adicional noturno (%)"
+            android:inputType="numberDecimal" />
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#813030"
+            android:fontFamily="@font/amethysta"
+            android:onClick="salvarEmpresa"
+            android:text="Salvar configurações"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
